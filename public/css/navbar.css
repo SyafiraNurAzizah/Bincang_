@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Astonpoliz';
+    src: url('../fonts/Astonpoliz.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Chocolates';
+    src: url('../fonts/TT\ Chocolates\ Trial\ Medium.otf') format('opentype');
+}
+@font-face {
+    font-family: 'Nunito Light';
+    src: url('../fonts/Nunito-Light.ttf') format('truetype');
+}
+
+/* body{
+    background-color: #fffcf4;
+} */
+
+.navbar {
+    position: fixed;
+    display: flex;
+    height: 65px;
+    width: 100%;
+    background-color: #fffcf4;
+    /* background-color: #ffff; */
+    top: 0;
+    left: 0;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.096);
+    z-index: 1000;
+}
+
+/* ===================================== T I T L E ====================================== */
+.talkgether {
+    font-family: 'Astonpoliz', sans-serif;
+    position: relative;
+    left: 50px;
+    bottom: 3px;
+    font-size: 25px;
+    color: #3c2113;
+    letter-spacing: 2px;
+}
+.t {
+    font-size: 27px;
+    color: #8f6448;
+}
+.line {
+    font-size: 20px;
+    color: #8f6448;
+}
+/* ====================================================================================== */
+
+/* ===================================== M E N U ====================================== */
+.menu {
+    display: flex;
+    position: relative;
+    left: 145px;
+    top: 8px;
+}
+.menu a {
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Nunito Light', sans-serif;
+    /* font-family: 'Astonpoliz', sans-serif; */
+    color: #8f6448;
+    min-width: 85px;
+    display: inline-block;
+}
+.menu a:hover {
+    color: #3c2113;
+    font-weight: bold;
+}
+.menu a.active {
+    font-weight: bold;
+}
+/* ==================================================================================== */
+
+/* ===================================== S E A R C H ====================================== */
+.search-container { 
+    display: flex;
+    position: relative;
+    left: 240px;
+    top: 13px;
+}
+.search-container input[type="text"] {
+    width: 350px;
+    height: 40px;
+    box-sizing: border-box;
+    font-size: 17px;
+    font-family: 'Nunito Light', sans-serif;
+    font-weight: 100;
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #8f64481c;
+    color: #3c2113;
+    transition: 0.7s ease-in-out;
+}
+.search-container input::placeholder {
+    color: #3c2113b2;
+    font-family: 'Nunito Light', sans-serif;
+}
+.search-container input:focus {
+    width: 515px;
+    outline-color: #8f6448;
+    background-color: #fffcf4;
+}
+
+
+/* ----------------------- s e a r c h   b u t t o n ------------------------------ */
+.search-button {
+    height: 30px;
+    width: 30px;
+    border-radius: 100%;
+    position: relative;
+    right: 36px;
+    top: 5px;
+    cursor: pointer;
+    transition: transform 1s ease-in-out, background-color 0.2s ease-in-out;
+}
+.search-button:hover {
+    height: 30px;
+    width: 30px;
+    background-color: #8f644823;
+    /* background-color: #8f6448; */
+    border-radius: 100%;
+    position: relative;
+    right: 36px;
+    top: 5px;
+    transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.search-button i {
+    position: absolute;
+    top: 15px;
+    right: 7px;
+    transform: translateY(-50%);
+    color: #3c2113;
+}
+.search-button:hover i {
+    color: #8f6448;
+    /* color: #fffcf4; */
+}
+.search-container.focused .search-button {
+    transform: translateX(40px);
+}
+
+/* -------------------------------------------------------------------------------- */
+/* ----------------------- c l e a r   b u t t o n ------------------------------ */
+.clear-button {
+    display: none;
+    height: 20px;
+    width: 20px;
+    border-radius: 100%;
+    background-color: #8f64481c;
+    position: relative;
+    right: 60px;
+    top: 10px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+.clear-button i {
+    color: #8f6448;
+    position: relative;
+    left: 4px;
+    top: 2px;
+}
+.search-container.focused.transition-complete .clear-button {
+    display: block;
+    opacity: 1;
+    /* transition-delay: 1s; */
+}
+/* ---------------------------------------------------------------------------------- */
+/* ======================================================================================= */
+
+/* ======================================= L O G I N ======================================== */
+.login-button a {
+    display: flex;
+    position: fixed;
+    left: 1285px;
+    top: 25px;
+    font-family: 'Nunito Light', sans-serif;
+    color: #3c2113;
+    transition: 0.5s ease;
+    cursor: pointer;
+}
+.login-button a:hover {
+    transform: scale(1.5);
+    transition: 0.5s ease;
+}
+.login-button a:active {
+    color: #8f6448;
+    transition: 0.1;
+}
+/* =========================================================================================== */
