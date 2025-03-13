@@ -11,7 +11,7 @@
 <ul>
     <li><b>Framework</b>: Laravel (PHP)</li>
     <li><b>Database</b>: MySQL</li>
-    <li><b>Frontend</b>: HTML, CSS, Bootstrap</li>
+    <li><b>Front-End</b>: HTML, CSS, Bootstrap</li>
     <li><b>Autentikasi</b>: Laravel Authentication</li>
     <li><b>Penyimpanan Gambar</b>: Laravel Storage</li>
 </ul>
