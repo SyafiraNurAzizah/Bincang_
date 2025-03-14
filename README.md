@@ -33,17 +33,25 @@
 
 <h3>Instalasi</h3>
 <p>Ikuti langkah-langkah berikut untuk menjalankan proyek ini secara lokal:</p>
-<i># Clone repositori ini</i>
-<p><b>git clone https://github.com/SyafiraNurAzizah/Bincang_.git</b></p>
-<i># Masuk ke direktori proyek</i>
-<p><b>cd bincang_</b></p>
-<i># Buat file konfigurasi .env berdasarkan .env.example</i>
-<p><b>cp .env.example .env</b></p>
-<i># Generate application key</i>
-<p><b>php artisan key:generate</b></p>
-<i># Jalankan migrasi database</i>
-<p><b>php artisan migrate --seed</b></p>
-<i># Jalankan server Laravel</i>
-<p><b>php artisan serve</b></p>
+
+```bash
+# Clone repositori ini
+git clone https://github.com/SyafiraNurAzizah/Bincang_.git
+
+# Masuk ke direktori proyek
+cd bincang_
+
+# Buat file konfigurasi .env berdasarkan .env.example
+cp .env.example .env
+
+# Generate application key
+php artisan key:generate
+
+# Jalankan migrasi database
+php artisan migrate --seed
+
+# Jalankan server Laravel
+php artisan serve
+```
 
 <p>Akses website melalui http://127.0.0.1:8000.</p>
